@@ -1,6 +1,6 @@
 # ffmpeg Image Extractor
 
-This service helps to extract an image from a video file by using ffmpeg library.
+This service helps to extract an image from a video file by utilizing the ffmpeg library.
 
 ## Running on docker
 
@@ -10,7 +10,9 @@ To run the application, execute the command below:
 bin/service-start
 ```
 
-## build docker image
+## building docker image
+
+To build the docker image of the application, execute the command below:
 
 ```bash
 bin/build
@@ -19,7 +21,7 @@ bin/build
 ## Test
 
 Integration and unit test were both added to ensure the application is reliable and produce efficient result.
-To run the test. execute the command below
+To run the test, execute the command below
 
 ```bash
 npm run test
@@ -29,14 +31,14 @@ npm run test
 
 The API extracts an image at the given timestamp without downloading the video to disk or any directory within the container. The image is returned as a base64 encoded string and returned in the response body.
 
-Request type: `GET`
-Request enpoint: `/ffmpeg/image`
-Request query params: `url` and `timestamp`
+Request type: `GET`<br>
+Request enpoint: `/ffmpeg/image`<br>
+Request query params: `url` and `timestamp`<br>
 
 Sample request:
 `http://localhost:8070/ffmpeg/image?timestamp=1&url=https://public-anios-dev.s3.ap-southeast-1.amazonaws.com/jungle_3s.mp4`
 
-Response:
+Sample response:
 
 ```javascript
 {
