@@ -4,7 +4,6 @@ import helmet from 'helmet';
 import imageConverterRoute from './routes/imageExtractorRoute';
 import config from './utils/src/config';
 
-
 // Boot express
 const app: Application = express();
 const port = config.PORT;
@@ -25,4 +24,4 @@ app.use('/', (req: Request, res: Response) => {
 // Start server
 app.listen(port, () => console.log(`Server is listening on port ${port}`));
 
-export default app;  // exporting for integration testing
+export default app; // exporting for integration testing

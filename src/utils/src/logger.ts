@@ -11,7 +11,7 @@ const logger = winston.createLogger({
   ],
 });
 
-if (config.APP_ENVIRONMENT !== "production") {
+if (config.APP_ENVIRONMENT !== 'production') {
   logger.add(
     new winston.transports.Console({
       format: winston.format.simple(),

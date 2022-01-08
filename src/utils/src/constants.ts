@@ -17,4 +17,4 @@ export const DEFAULTS = {
 };
 
 export const CATCH_ERROR_MESSAGE = 'An error occured, please try again later.';
-export const INVALID_FILE = "The provided text file cannot be read";
+export const INVALID_FILE = 'The provided text file cannot be read';
