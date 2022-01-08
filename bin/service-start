@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# Start project containers.
+
+docker-compose \
+    -p ffmpegImageExtractor \
+    up --build
