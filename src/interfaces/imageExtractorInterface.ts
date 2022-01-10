@@ -3,9 +3,9 @@ export interface ImageExtractorRequestInterface {
   url: string;
 }
 
-export enum messageResponse{
-  success = "success",
-  error = "error",
+export enum messageResponse {
+  success = 'success',
+  error = 'error',
 }
 export interface ImageExtractorResponseInterface {
   message: messageResponse;
