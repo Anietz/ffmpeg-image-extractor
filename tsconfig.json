@@ -4,7 +4,9 @@
     "module": "commonjs",
     "sourceMap": true,
     "outDir": "./build",
-    "rootDir": "./src",
+    //"rootDir": "./src",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
     /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": true,

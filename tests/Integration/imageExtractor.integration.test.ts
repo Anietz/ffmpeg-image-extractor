@@ -17,9 +17,7 @@ describe('Extract an image from video for url', () => {
       .get(url)
       .then((response:any) => {
         const result = response.body;
-        assert.equal(result.code,200);
         assert.equal(result.message,"success");
-        assert.equal(result.status,"success");
         expect(result.data).to.be.a('string');
         done();
       }).catch(done);

@@ -1,4 +1,3 @@
-import logger from './logger';
 export const errorFormatter = (v: any) => {
   // Build your resulting errors however you want! String, object, whatever - it works!
   const { msg, param } = v;
@@ -34,7 +33,6 @@ export const checkIfFileCanBeReadFromUrl = async (url: string): Promise<boolean>
     const response = await axios.head(url);
     return response.status === 200;
   } catch (error) {
-    logger.error(`Error: ${error}`);
     return false;
   }
 };

@@ -21,4 +21,4 @@ COPY --from=ts-compiler /home/node/app/build ./build
 COPY .env .
 
 EXPOSE 8070
-CMD [ "node", "build/index.js" ]
+CMD [ "node", "build/src/index.js" ]
