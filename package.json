@@ -1,7 +1,7 @@
 {
   "name": "ffmpeg-image-extractor-from-video-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "This service helps to extract an image from a video file by utilizing the ffmpeg library.",
   "main": "index.js",
   "scripts": {
     "build": "tsoa spec-and-routes && tsc",

@@ -5,13 +5,14 @@ COPY package*.json ./
 COPY tsconfig*.json ./
 RUN npm install
 COPY . ./
+RUN npm run test
 RUN npm run build
 
 FROM node:14-alpine3.10
 RUN mkdir /home/node/app
 WORKDIR /home/node/app
-COPY package*.json ./
-RUN npm install
+COPY --from=ts-compiler /home/node/app/package*.json ./
+RUN npm ci
 RUN apk update
 RUN apk add
 RUN apk add ffmpeg
